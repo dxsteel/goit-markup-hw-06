@@ -694,6 +694,13 @@ input:hover,
 input:focus {
   cursor: pointer;
 }
+textarea {
+  resize: none;
+  outline: none;
+}
+input {
+  outline: none;
+}
 
 .form-field input {
   border: 1px solid rgba(33, 33, 33, 0.2);
