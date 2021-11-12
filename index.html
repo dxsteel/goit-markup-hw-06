@@ -248,6 +248,19 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button data-modal-close class="modal-button"><img src="./images/vector.jpg" alt="close"></button>
+       <form>
+           <label for="name">Имя</label>
+           <input type="text" name="name" id="name">
+           <label for="tel">Телефон</label>
+           <input type="tel" name="tel" id="tel">
+           <label for="mail">Почта</label>
+           <input type="email" name="email" id="email">
+        <label for="feedback">Комментарии</label> 
+            <textarea name="feedback" rows="5" placeholder="Введите текст..."></textarea>
+        <input type="checkbox" name="terms of an agreement" value="" id="policy">
+        <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+           <button type="submit">Отправить</button>
+       </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
