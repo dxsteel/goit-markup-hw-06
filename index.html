@@ -248,18 +248,34 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button data-modal-close class="modal-button"><img src="./images/vector.jpg" alt="close"></button>
-       <form>
-           <label for="name">Имя</label>
-           <input type="text" name="name" id="name">
-           <label for="tel">Телефон</label>
-           <input type="tel" name="tel" id="tel">
-           <label for="mail">Почта</label>
-           <input type="email" name="email" id="email">
-        <label for="feedback">Комментарии</label> 
-            <textarea name="feedback" rows="5" placeholder="Введите текст..."></textarea>
-        <input type="checkbox" name="terms of an agreement" value="" id="policy">
-        <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-           <button type="submit">Отправить</button>
+            <form class="form">
+                <h2 class="modal-title">Оставьте свои данные, мы Вам перезвоним</h2>
+                <ul>
+                    <li class="form-field">
+                        <label class="form-text" for="name">Имя</label>
+                        <input type="text" name="name" id="name">
+                    </li>
+                    <li class="form-field">
+                        <label class="form-text" for="tel">Телефон</label>
+                        <input type="tel" name="tel" id="tel">
+                    </li>
+                    <li class="form-field">
+                        <label class="form-text" for="mail">Почта</label>
+                        <input type="email" name="email" id="email">
+                    </li>
+                    <li class="form-field-feedback">
+                        <label class="form-text" for="feedback">Комментарии</label>
+                        <textarea class="textarea-window" name="feedback" rows="5" height="120" placeholder="Введите текст"></textarea>
+                    </li>
+                    <li class="checkbox-title">
+                        <input type="checkbox" name="terms of an agreement" value="" id="policy">
+                        <label class="feature-text" for="policy">Соглашаюсь с рассылкой и принимаю <span class="policy"> Условия договора</span></label>
+                    </li>
+                </ul>
+                <div>
+                    <button class="button-policy" type="submit">Отправить</button>
+                </div>
+           
        </form>
         </div>
     </div>
