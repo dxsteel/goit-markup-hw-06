@@ -656,10 +656,13 @@ body {
   box-sizing: border-box;
   border-radius: 50%;
   position: absolute;
+  fill: #212121;
 }
 .modal-button:hover,
 .modal-button:focus {
   cursor: pointer;
+  fill: var(--accent-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form {
@@ -688,6 +691,7 @@ body {
   border: 1px solid #2196f3;
   box-sizing: border-box;
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 input:hover,
@@ -726,6 +730,7 @@ input {
   border: 1px solid #2196f3;
   box-sizing: border-box;
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-title {
@@ -794,4 +799,27 @@ input {
   margin-left: auto;
   margin-top: 30px;
   display: flex;
+}
+
+.icon-modal {
+  display: flex;
+  align-items: center;
+  margin-right: 8.38px;
+  border-radius: 4px;
+  border: 2px solid #212121;
+  width: 16px;
+  height: 15px;
+  cursor: pointer;
+}
+.checkbox:checked + label .icon-modal {
+  background-color: var(--accent-color);
+  border: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.checkbox {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
