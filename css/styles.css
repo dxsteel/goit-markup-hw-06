@@ -809,10 +809,11 @@ input {
   margin-top: auto;
   margin-right: 9px;
 }
+
 .icon-modal-form {
   fill: #212121;
 }
-.form-input ~ .icon-in-field:hover {
+.form-input ~ .icon-modal-form:hover {
   fill: #2196f3;
   background-color: #2196f3;
 }
