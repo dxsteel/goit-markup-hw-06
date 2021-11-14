@@ -685,9 +685,10 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  position: relative;
 }
-.form-field input:hover,
-.form-field input:focus {
+.form-field .form-input:hover,
+.form-field .form-input:focus {
   border: 1px solid #2196f3;
   box-sizing: border-box;
   border-radius: 4px;
@@ -799,6 +800,21 @@ input {
   margin-left: auto;
   margin-top: 30px;
   display: flex;
+}
+.icon-in-field {
+  position: absolute;
+  bottom: 0;
+  margin-left: 9px;
+  margin-bottom: 8px;
+  margin-top: auto;
+  margin-right: 9px;
+}
+.icon-modal-form {
+  fill: #212121;
+}
+.form-input ~ .icon-in-field:hover {
+  fill: #2196f3;
+  background-color: #2196f3;
 }
 
 .icon-modal {
