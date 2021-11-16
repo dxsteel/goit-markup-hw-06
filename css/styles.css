@@ -61,7 +61,7 @@ body {
 .page-header-portfolio {
   margin: auto;
   background-color: #ffffff;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .page-header {
@@ -139,10 +139,12 @@ body {
 }
 .icon-contact {
   margin-right: 10px;
+  fill: var(--p-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-header:hover,
-.contacts-header:focus {
+.contacts-header:hover > .icon-contact,
+.contacts-header:focus > .icon-contact {
   fill: var(--accent-color);
 }
 
@@ -201,6 +203,7 @@ body {
 
 .item-li-footer {
   display: block;
+  width: 231px;
 }
 
 .title-footer {
@@ -265,7 +268,7 @@ body {
 .button-telegram-position {
   margin-left: 10px;
   margin-bottom: 92px;
-  margin-top: 130px;
+  margin-top: 133px;
 }
 
 .button-telegram {
@@ -476,7 +479,7 @@ body {
   align-items: center;
   transform: rotateY(0deg);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-link {
   display: flex;
